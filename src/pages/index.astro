@@ -1,65 +1,26 @@
 ---
-import Layout from '../components/Layout.astro';
-import FeedbackForm from '../components/FeedbackForm.astro';
+import Layout from "../components/Layout.astro";
+import "@fontsource/limelight";
+import "@fontsource-variable/josefin-sans";
 ---
 
-<Layout title="Astro Toolbox">
+<Layout title="La Rimaudière - Restaurant, Paris 9eme">
   <main>
-    <div class="header">
-      <div class="logo">
-        <img
-          src="https://user-images.githubusercontent.com/43764894/223557634-f62606c5-bdf9-476c-9264-0d3728189962.png"
-        />
-      </div>
+    <div id="content">
+      <main>
+        <a href="/menu">
+          <img
+            src="/larimaudiere-photo.jpg"
+            class="main_image"
+            alt="La Rimaudière Restaurant Exterieur"
+          />
+        </a>
+        <p>2 rue des Martyrs, 75009 Paris</p>
+        <p>
+          Ouvert du mardi au samedi : de 08h00 à 00h00<br />Le dimanche : de
+          09h00 à 18h00<br />
+        </p>
+      </main>
     </div>
-    <div class="intro">
-
-    <h1>test</h1>
-    <p>
-      You can find the code for this project on GitHub at
-      <a href="https://github.com/netlify-templates/astro-toolbox"
-        >https://github.com/netlify-templates/astro-toolbox</a
-      >! Happy coding!
-    </p>
-    </div>
-    <FeedbackForm />
-    <a class="jokes-link" href="/api/joke">
-    <h3>
-      Click here for function-loaded jokes!
-    </h3>
-    </a>
   </main>
 </Layout>
-
-<style>
-  :root {
-    text-align: center;
-  }
-  .logo img {
-    padding: 30px 0;
-    width: 100%;
-  }
-
-  main {
-    padding: 2rem 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 60ch;
-    align-items: center;
-  }
-
-  footer {
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer img {
-    width: 20px;
-  }
-</style>

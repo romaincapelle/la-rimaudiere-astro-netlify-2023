@@ -1,0 +1,184 @@
+---
+import Layout from "../components/Layout.astro";
+import "@fontsource/limelight";
+import "@fontsource-variable/josefin-sans";
+---
+
+<Layout title="La Rimaudière - Restaurant, Paris 9eme">
+  <main>
+    <h1 class="menu_title text-yellow">LE MENU</h1>
+    <!-- // link to menu in english with UK flag SVG-->
+    <div class="menu__flags">
+      <a href="/menu-en">
+        <p class="menu__question">May I have the english menu?</p>
+        <!--?xml version="1.0" encoding="UTF-8"?-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 60 30"
+          width="60"
+          height="30"
+        >
+          <clipPath id="s">
+            <path d="M0,0 v30 h60 v-30 z"></path>
+          </clipPath>
+          <clipPath id="t">
+            <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"></path>
+          </clipPath>
+          <g clip-path="url(#s)">
+            <path d="M0,0 v30 h60 v-30 z" fill="#012169"></path>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"
+            ></path>
+            <path
+              d="M0,0 L60,30 M60,0 L0,30"
+              clip-path="url(#t)"
+              stroke="#C8102E"
+              stroke-width="4"></path>
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"
+            ></path>
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"
+            ></path>
+          </g>
+        </svg>
+      </a>
+
+      <div class="menu__columns">
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Entrées</h2>
+          <p>Soupe à l'oignon gratinée au cantal</p>
+          <p>Les 6 escargots</p>
+          <p>Les 12 escargots</p>
+          <p>Carpaccio de St Jacques</p>
+          <p>Pâté de campagne</p>
+          <p>Chêvre rôti au miel</p>
+          <p>Les 6 huitres fine le clair</p>
+          <p>Les 12 huitres fine le clair</p>
+          <p>Les oeufs bio mimosa</p>
+          <p>Les ravioles "Royans", crème de ciboulette</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Viandes</h2>
+          <p>Tartare de boeuf italien</p>
+          <p>Entrecôte</p>
+          <p>Confit de Canard</p>
+          <p>Escalope de veau normande</p>
+          <p>Poulet fermier</p>
+          <p>Bavette à l'échalotte</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Poissons</h2>
+          <p>Tataki de thon aux sésames</p>
+          <p>Fish and chips</p>
+          <p>Gambas risotto</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Fromages</h2>
+          <p><i>Cantal, camembert, chèvre, fromage truffé, St nectaire</i></p>
+          <p>Une part de fromage</p>
+          <p>L'assortiment de 3 fromages</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Desserts</h2>
+          <p>Mousse au chocolat</p>
+          <p>Crème brûlée</p>
+          <p>Tarte tatin</p>
+          <p>Crème caramel</p>
+          <p>Tiramisu</p>
+          <p>Fontainebleau, coulis de fruits rouge</p>
+          <p>Café gourmand</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Glaces</h2>
+          <p>Chocolat</p>
+          <p>Café</p>
+          <p>Vanille</p>
+          <p>Caramel beurre salé</p>
+          <p>Fraise</p>
+          <p>Citron</p>
+          <p>Pomme</p>
+          <p>Café ou chocolat liégeois</p>
+          <p>Coupe colonel</p>
+          <p>Trou normand</p>
+          <p>Nougat glacé, coulis de fruits rouge</p>
+          <p>Profiteroles au chocolat</p>
+          <p>Banana split</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">petits déjeuners</h2>
+          <p>
+            Français:<br />Boisson chaude + <br />tartines confiture ou une
+            viennoiserie +<br />orange pressée
+          </p>
+          <p>
+            Anglais:<br />Boisson chaude + <br />omelette nature (3 oeufs bio) +<br
+            /> orange pressée
+          </p>
+          <p>Croissant</p>
+          <p>Pain au chocolat</p>
+          <p>Tartine beurre</p>
+          <p>Confiture ou miel</p>
+          <p>Beurre</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Cocktails</h2>
+          <p>Mojito - Passion</p>
+          <p>Mojito - Kiwi</p>
+          <p>Honey daiquiri</p>
+          <p>Virgin Mojito - Kiwi</p>
+          <p>Fruity mojito</p>
+          <p>Fruity colada</p>
+          <p>Margarita Ananas</p>
+          <p>Banananas</p>
+          <p>Aperol Spritz</p>
+          <p>Bananarama</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">apéritifs - whiskies</h2>
+          <p>Pastis, Ricard 2cl</p>
+          <p>Martini, Campari 5cl</p>
+          <p>Porto, Salers 5cl</p>
+          <p>Muscat, Lillet 5cl</p>
+          <p>Kir vin blanc 14cl</p>
+          <p>Kir royal 14cl</p>
+          <p>Americano "Maison"</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">bières</h2>
+          <p>Silver</p>
+          <p>1664</p>
+          <p>Grimbergen</p>
+          <p>Grimbergen blanche</p>
+          <p>Monaco</p>
+          <p>Picon bière</p>
+          <p>Pression</p>
+          <p>Bouteille</p>
+          <p>Desperados (33cl)</p>
+          <p>Corona (33cl)</p>
+          <p>Bière sans alcool (25cl)</p>
+          <p>Pelforth brune (33cl)</p>
+          <p>Cidre brut ou doux (25cl)</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">les planches</h2>
+          <p>La planche de fromages</p>
+          <p>La planche de charcuteries</p>
+          <p>La planche mixte</p>
+          <p>La planche de la mer</p>
+          <p>La planche crousty</p>
+          <p>La planche d'antipasti</p>
+        </div>
+        <div class="menu__column">
+          <h2 class="menu__column--title text-yellow">Les vins rouges</h2>
+          <p>2021 Saumur Champigny, Laurigine, Loire</p>
+          <p>2018 Brouilly "Domaine Laforest", Beaujolais</p>
+          <p>2017 Corbières, Essentielle Languedoc</p>
+          <p>2017 Château La Verrerie "Hautes Collines" BIO"</p>
+          <h2 class="menu__column--title text-yellow">Les vins blancs</h2>
+          <p>2018 AOC Chardonnay "Vigne Antique"</p>
+          <p>2021 AOC Gewurztraminer "Henri Weber"</p>
+          <p>2020 AOP Sancerre "Propriété Vincent Doucet"</p>
+          <p>2021 AOP Sauvignon "Jean Dellac"</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -18,6 +18,8 @@
     "prettier-plugin-astro": "^0.12.0"
   },
   "dependencies": {
+    "@fontsource-variable/josefin-sans": "^5.0.9",
+    "@fontsource/limelight": "^5.0.11",
     "cypress": "^10.0.3"
   }
 }
