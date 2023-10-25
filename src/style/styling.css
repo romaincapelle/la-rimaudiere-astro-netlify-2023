@@ -371,12 +371,13 @@ h1.menu_title {
   grid-row-gap: 40px;
   padding-bottom: 180px;
   margin-top: 80px;
+  padding-inline: 16px;
 }
 
 @media only screen and (min-width: 1600px) {
   .menu__columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 40px;
     padding-bottom: 180px;
     margin-top: 80px;
@@ -416,7 +417,7 @@ h1.menu_title {
   .menu__column:nth-child(3n) {
     border-right: 2px solid #f4d353;
   }
-  .menu__column:nth-child(4n) {
+  .menu__column:nth-child(3n) {
     border-right: none;
   }
 }
@@ -453,15 +454,54 @@ h1.menu_title {
   text-transform: uppercase;
 }
 
+.menu__column--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 16px;
+  border-bottom: 1px dashed rgba(250, 250, 250, 0.3);
+  gap: 16px;
+}
+
+.menu__column--item {
+  text-align: left;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+}
+
+.menu__column--price {
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
 .menu__question {
   padding-inline: 14px;
 }
 
 /* contact page */
+
+.contact-page {
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.contact__list-metro {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-left: 0;
+}
+
 .map-container {
   padding: 20px 0 40px;
 }
 
 .contact__owners {
   font-family: "Josefin Sans Variable", sans-serif;
+}
+
+.menu__column.menu__column--full {
+  grid-column: 1 / 4;
 }
