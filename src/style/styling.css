@@ -386,8 +386,8 @@ h1.menu_title {
 
 @media only screen and (max-width: 768px) {
   .menu__columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     grid-row-gap: 40px;
     padding-bottom: 180px;
     margin-top: 80px;
@@ -396,8 +396,8 @@ h1.menu_title {
 
 @media only screen and (max-width: 480px) {
   .menu__columns {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     grid-row-gap: 40px;
     padding-bottom: 180px;
     margin-top: 80px;
@@ -415,7 +415,7 @@ h1.menu_title {
 
 @media only screen and (min-width: 1600px) {
   .menu__column:nth-child(3n) {
-    border-right: 2px solid #f4d353;
+    border: none;
   }
   .menu__column:nth-child(3n) {
     border-right: none;
@@ -424,25 +424,24 @@ h1.menu_title {
 
 @media only screen and (max-width: 768px) {
   .menu__column:nth-child(3n) {
-    border-right: 2px solid #f4d353;
+    border: none;
   }
   .menu__column:nth-child(4n) {
-    border-right: 2px solid #f4d353;
+    border: none;
   }
   .menu__column:nth-child(2n) {
-    border-right: none;
+    border: none;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .menu__column {
-    border-right: none;
-    border-bottom: 1px solid #f4d353;
+    border: none;
     padding-bottom: 40px;
   }
 
   .menu__column:first-child {
-    border-top: 1px solid #f4d353;
+    border: none;
   }
 }
 
@@ -471,9 +470,20 @@ h1.menu_title {
 }
 
 .menu__column--price {
-  text-align: right;
-  display: flex;
-  align-items: center;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1600px) {
+.menu__column--price {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    min-width: 193px;
+    justify-content: flex-end;
+}
 }
 
 .menu__question {
